@@ -1,0 +1,89 @@
+/* ============================
+   LAYOUT GERAL
+============================ */
+
+/* HEADER */
+.nav-links {
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--space-2) var(--space-3);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* MAIN */
+main {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.hero h1 {
+  font-size: var(--font-xl);
+  color: var(--color-primary-dark);
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: var(--font-md);
+  margin-bottom: var(--space-3);
+  max-width: 60ch;
+}
+
+.hero img {
+  border-radius: var(--space-1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  background: var(--color-dark);
+  color: #fff;
+  text-align: center;
+  padding: var(--space-3);
+  font-size: var(--font-sm);
+}
+
+footer a {
+  color: var(--color-secondary);
+}
+
+/* GRID DE CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  body {
+    font-size: var(--font-sm);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    text-align: center;
+  }
+}

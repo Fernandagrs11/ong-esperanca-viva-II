@@ -1,0 +1,71 @@
+/* ============================
+   BASE E VARIÁVEIS GLOBAIS
+============================ */
+:root {
+  /* 🎨 Paleta de Cores */
+  --color-primary: #00b37e;
+  --color-primary-dark: #008c63;
+  --color-secondary: #ffb703;
+  --color-accent: #fb5607;
+  --color-light: #f9fafb;
+  --color-dark: #222;
+  --color-neutral: #6b7280;
+  --color-background: #ffffff;
+
+  /* 🧱 Espaçamento modular */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* 🔤 Tipografia */
+  --font-family: "Poppins", Arial, sans-serif;
+  --font-xl: 2.5rem;
+  --font-lg: 1.75rem;
+  --font-md: 1.25rem;
+  --font-sm: 1rem;
+  --font-xs: 0.875rem;
+
+  /* ⚙️ Layout */
+  --container-width: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-sm);
+  background: var(--color-background);
+  color: var(--color-dark);
+  margin: 0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-2);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

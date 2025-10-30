@@ -1,0 +1,67 @@
+/* ============================
+   NAVEGAÇÃO PRINCIPAL
+============================ */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-2);
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--space-1) var(--space-2);
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background: var(--color-primary-dark);
+  outline: none;
+}
+
+/* DROPDOWN */
+.nav-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  color: var(--color-dark);
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-width: 180px;
+  z-index: 10;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: var(--space-1) var(--space-2);
+  color: var(--color-dark);
+}
+
+.dropdown-menu a:hover {
+  background: var(--color-light);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .nav-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+}
